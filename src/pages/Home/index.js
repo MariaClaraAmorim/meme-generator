@@ -58,7 +58,7 @@ export default function Home() {
 
   return (
     <Wrapper>
-      <img src="/logo.svg" alt="MemeMaker" />
+      {/* <img src="/logo.svg" alt="MemeMaker" /> */}
 
       <Card>
         {generatedMeme && (
