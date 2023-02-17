@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 5rem 5rem 5rem 5rem;
+  padding: 5rem 3rem 5rem 3rem;
 `;
 
 export const Card = styled.div`
@@ -20,7 +20,7 @@ export const Card = styled.div`
 
   h2 {
     font-size: 22px;
-    color: #392d2d;
+    color: #AB43AD;
     margin-bottom: 10px;
   }
 
@@ -44,7 +44,7 @@ export const Templates = styled.div`
     border: 2px solid transparent;
 
     &.selected {
-      border-color: #4395d8;
+      border-color: #AB43AD;
     }
 
     img {
@@ -52,6 +52,16 @@ export const Templates = styled.div`
       height: 130px;
     }
   }
+`;
+
+export const Image = styled.img`
+  width: 100%;
+  height: 100%;
+`;
+
+export const ImageMemeMaker = styled.img`
+width: 300px;
+height: 130px;  
 `;
 
 export const Form = styled.form`
@@ -70,7 +80,7 @@ export const Button = styled.button`
   width: 100%;
   height: 40px;
   border-radius: 8px;
-  background: #4395d8;
+  background: #AB43AD;
   color: #fff;
   font-weight: bold;
   transition: background 0.2s ease-in;
@@ -78,6 +88,6 @@ export const Button = styled.button`
   border: 2px solid transparent;
 
   &:hover {
-    background: #3672a3;
+    background: #e67be9;
   }
 `;
