@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from "react";
 import qs from "qs";
 
-import { Wrapper, Card, Templates, Form, Button } from "./styles";
-// import logo from '../../images/logo.svg';
+import {
+  Wrapper,
+  Card,
+  ImageMemeMaker,
+  Templates,
+  Form,
+  Button,
+  Image,
+} from "./styles";
 
 export default function Home() {
   const [templates, setTemplates] = useState([]);
@@ -58,18 +65,14 @@ export default function Home() {
 
   return (
     <Wrapper>
-      {/* <img src="/logo.svg" alt="MemeMaker" /> */}
-
+      <ImageMemeMaker src="/memeMaker.png" alt="MemeMaker" />
       <Card>
         {generatedMeme && (
           <>
-            <img src={generatedMeme} alt="Generated Meme" />
+            <Image src={generatedMeme} alt="Generated Meme" />
             <Button type="button" onClick={handleReset}>
               Criar outro meme
             </Button>
-            {/* <a href="./meme.png" download>
-              <Button type="button">Fazer download</Button>
-            </a> */}
           </>
         )}
 
